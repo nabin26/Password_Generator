@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: #2a1e1e;
+}
+
+.container {
+  height: 500px;
+  width: 500px;
+  background-color: #ffd4d4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  margin-top: 15rem;
+  gap: 2rem;
+}
+
+.container h2 {
+  font-size: 38px;
+}
+
+.action-btn {
+  height: 3rem;
+  width: 10rem;
+  border-radius: 20px;
+  font-size: 24px;
+  background-color: black;
+  color: yellow;
+}
+
+.action-btn:hover {
+  cursor: pointer;
+}
+
+.label-class {
+  font-size: 26px;
+}
+
+.output {
+  font-size: 30px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+#pwd_txt {
+  border: 5px dotted rgb(211, 211, 198);
+}
+
+#clipboard {
+  height: 2rem;
+  width: 2rem;
+}
+
+.output i {
+  font-size: 30px;
+  border: none;
+  background: none;
+}
+
+.output i:hover {
+  cursor: pointer;
+}

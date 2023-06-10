@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c5a0bc5662.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="slider_main">
+        <input
+          type="range"
+          value="8"
+          min="1"
+          max="25"
+          class="slider"
+          oninput="this.nextElementSibling.value = this.value"
+          id="slider"
+        />
+        <output>8</output>
+      </div>
+      <button id="generate" class="action-btn">
+        Generate <i class="fab fa-keycdn"></i>
+      </button>
+      <label for="" class="label-class"
+        >Include special Characters
+        <input type="checkbox" name="" id="checkbox" checked="checked" />
+        <span class="checkmark"></span>
+      </label>
+      <div class="output">
+        <h5 id="pwd_txt">
+          <span>Click on Generate Button</span>
+        </h5>
+        <button id="clipboard" class="clipboard">
+          <i class="fas fa-clipboard"></i>
+        </button>
+      </div>
+      <span id="copy_text"></span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
